@@ -8,11 +8,9 @@ class EmailParser
    @email = email
   end 
 
-  def parse(email)
+  def parse
     email_array = []
-    email_array = email.split(",")
+    email_array = @email.split(",")
     email_array.uniq
-    
-    
-  end 
+     end 
 end 
